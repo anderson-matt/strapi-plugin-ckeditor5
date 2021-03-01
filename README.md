@@ -17,6 +17,7 @@ Replace default [Strapi](https://github.com/strapi/strapi) markdown WYSIWYG edit
 - Automatically upload Inserted images to Media Library (thanks to [ckeditor5-strapi-upload-plugin](https://github.com/gtomato/ckeditor5-strapi-upload-plugin))
 - Media Library button to insert stored images directly to the editor 🔥
 - Automatic translation of UI into selected in Strapi language 🔥
+- Full screen mode 🔥
 
 
 ## How to try
@@ -38,6 +39,10 @@ Don't forget to rebuild Strapi
 npm run strapi build
 ```
 
+## How to remove unused buttons
+
+See [customization guide](#how-to-customize-editor-optional).
+
 
 ## How to customize editor (optional)
 
@@ -45,9 +50,9 @@ If you want to change appearance of the editor or remove unused buttons you can 
 
 0. Go to your Strapi folder
 
-1. Copy empty config file `node_modules/strapi-plugin-ckeditor5/admin/src/config/ckeditor.js` to `extensions/ckeditor5/admin/src/config`
+1. Copy template config file [`node_modules/strapi-plugin-ckeditor5/admin/src/config/ckeditor.js`](admin/src/config/ckeditor.js) to `extensions/ckeditor5/admin/src/config`
 
-2. Add to `extensions/ckeditor5/admin/src/config/ckeditor.js` your custom [configuration](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/configuration.html)
+2. Set up `extensions/ckeditor5/admin/src/config/ckeditor.js` (see [configuration](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/configuration.html) guide)
 
 3. Rebuild Strapi
 
